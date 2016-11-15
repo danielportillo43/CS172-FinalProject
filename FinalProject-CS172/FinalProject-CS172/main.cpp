@@ -20,5 +20,4 @@ int main(int argc, const char * argv[]) {
     
     std::cout << " help!!\n";
     return 0;
->>>>>>> 5e30df96148d86c49b8d1d5a8496af14acc93d88
 }
