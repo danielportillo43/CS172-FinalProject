@@ -8,12 +8,11 @@
 
 #include <iostream>
 
-<<<<<<< HEAD
 using namespace std;
 
 int main(){
     cout << "Hi" << endl;
-=======
+    /*
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -21,4 +20,5 @@ int main(int argc, const char * argv[]) {
     std::cout << " help!!\n";
     return 0;
 >>>>>>> 5e30df96148d86c49b8d1d5a8496af14acc93d88
+     */
 }
