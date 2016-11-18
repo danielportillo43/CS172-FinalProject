@@ -11,4 +11,10 @@
 
 #include <stdio.h>
 
+class Math {
+public:
+    int add();
+    int subtract();
+};
+
 #endif /* Math_hpp */

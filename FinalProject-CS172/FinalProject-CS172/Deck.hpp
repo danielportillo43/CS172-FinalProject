@@ -10,5 +10,21 @@
 #define Deck_hpp
 
 #include <stdio.h>
+#include <string>
+#include <vector>
+using namespace std;
+
+class Student;
+class Card;
+class Deck {
+    string subject;
+    vector<Card>cards;
+    
+public:
+    Deck();
+    Deck(string s);
+    string getSubject();
+    void shuffle();
+};
 
 #endif /* Deck_hpp */

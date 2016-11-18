@@ -10,5 +10,12 @@
 #define English_hpp
 
 #include <stdio.h>
+#include <string>
+using namespace std;
+
+class English {
+public:
+    void compare(string input);
+};
 
 #endif /* English_hpp */

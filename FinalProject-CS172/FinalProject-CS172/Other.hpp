@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+class Other {
+public:
+    void flip();
+};
+
 #endif /* Other_hpp */

@@ -11,4 +11,15 @@
 
 #include <stdio.h>
 
+class Deck;
+template <typename T>
+class Card {
+    int cardNumber;
+    T face;
+    T back;
+    
+public:
+    Card(T f, T b);
+};
+
 #endif /* Card_hpp */
