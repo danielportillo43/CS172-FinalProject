@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A97D551DDECC1A001E3E02 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D531DDECC1A001E3E02 /* Student.cpp */; };
+		14A97D581DDECC28001E3E02 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D561DDECC28001E3E02 /* Deck.cpp */; };
+		14A97D5B1DDECC35001E3E02 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D591DDECC35001E3E02 /* Card.cpp */; };
+		14A97D5E1DDECC57001E3E02 /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D5C1DDECC57001E3E02 /* Math.cpp */; };
+		14A97D611DDECC6A001E3E02 /* English.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D5F1DDECC6A001E3E02 /* English.cpp */; };
+		14A97D641DDECD08001E3E02 /* Other.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D621DDECD08001E3E02 /* Other.cpp */; };
 		14E98B991DDBC8F200E07634 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E98B981DDBC8F200E07634 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14A97D531DDECC1A001E3E02 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		14A97D541DDECC1A001E3E02 /* Student.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Student.hpp; sourceTree = "<group>"; };
+		14A97D561DDECC28001E3E02 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		14A97D571DDECC28001E3E02 /* Deck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
+		14A97D591DDECC35001E3E02 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		14A97D5A1DDECC35001E3E02 /* Card.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		14A97D5C1DDECC57001E3E02 /* Math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Math.cpp; sourceTree = "<group>"; };
+		14A97D5D1DDECC57001E3E02 /* Math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Math.hpp; sourceTree = "<group>"; };
+		14A97D5F1DDECC6A001E3E02 /* English.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = English.cpp; sourceTree = "<group>"; };
+		14A97D601DDECC6A001E3E02 /* English.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = English.hpp; sourceTree = "<group>"; };
+		14A97D621DDECD08001E3E02 /* Other.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Other.cpp; sourceTree = "<group>"; };
+		14A97D631DDECD08001E3E02 /* Other.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Other.hpp; sourceTree = "<group>"; };
 		14E98B951DDBC8F100E07634 /* FinalProject-CS172 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FinalProject-CS172"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E98B981DDBC8F200E07634 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				14E98B981DDBC8F200E07634 /* main.cpp */,
+				14A97D531DDECC1A001E3E02 /* Student.cpp */,
+				14A97D541DDECC1A001E3E02 /* Student.hpp */,
+				14A97D561DDECC28001E3E02 /* Deck.cpp */,
+				14A97D571DDECC28001E3E02 /* Deck.hpp */,
+				14A97D591DDECC35001E3E02 /* Card.cpp */,
+				14A97D5A1DDECC35001E3E02 /* Card.hpp */,
+				14A97D5C1DDECC57001E3E02 /* Math.cpp */,
+				14A97D5D1DDECC57001E3E02 /* Math.hpp */,
+				14A97D5F1DDECC6A001E3E02 /* English.cpp */,
+				14A97D601DDECC6A001E3E02 /* English.hpp */,
+				14A97D621DDECD08001E3E02 /* Other.cpp */,
+				14A97D631DDECD08001E3E02 /* Other.hpp */,
 			);
 			path = "FinalProject-CS172";
 			sourceTree = "<group>";
@@ -118,7 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A97D611DDECC6A001E3E02 /* English.cpp in Sources */,
+				14A97D581DDECC28001E3E02 /* Deck.cpp in Sources */,
 				14E98B991DDBC8F200E07634 /* main.cpp in Sources */,
+				14A97D551DDECC1A001E3E02 /* Student.cpp in Sources */,
+				14A97D5B1DDECC35001E3E02 /* Card.cpp in Sources */,
+				14A97D5E1DDECC57001E3E02 /* Math.cpp in Sources */,
+				14A97D641DDECD08001E3E02 /* Other.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +273,7 @@
 				14E98B9E1DDBC8F200E07634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
