@@ -17,13 +17,19 @@ using namespace std;
 class Student;
 class Card;
 class Deck {
+    //subject for the deck of cards
     string subject;
+    //vector of cards for the deck
     vector<Card>cards;
     
 public:
+    //no arg constructor for the deck
     Deck();
+    //constructor that passes in the subject name for the deck
     Deck(string s);
+    // get the subject for the deck
     string getSubject();
+    //shuffle the order of the cards int the vector cards
     void shuffle();
 };
 

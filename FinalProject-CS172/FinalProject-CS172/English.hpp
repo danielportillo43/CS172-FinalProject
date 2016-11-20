@@ -15,6 +15,7 @@ using namespace std;
 
 class English {
 public:
+    //compare the input of the user with the back of the card
     void compare(string input);
 };
 

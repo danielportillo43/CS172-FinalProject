@@ -13,6 +13,7 @@
 
 class Math {
 public:
+    //find a way to read in the face of the card and then do the appropriate calculations to auto create the answer (back) of the card
     int add();
     int subtract();
 };
