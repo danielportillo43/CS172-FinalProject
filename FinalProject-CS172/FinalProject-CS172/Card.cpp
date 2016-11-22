@@ -7,3 +7,11 @@
 //
 
 #include "Card.hpp"
+
+Card::Card(){
+    
+}
+Card::Card(T f, T b){
+    face = f;
+    back = b;
+}

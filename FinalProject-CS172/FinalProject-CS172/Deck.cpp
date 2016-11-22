@@ -7,3 +7,16 @@
 //
 
 #include "Deck.hpp"
+
+Deck::Deck(){
+    
+}
+Deck::Deck(string s){
+    subject = s;
+}
+string Deck::getSubject(){
+    return subject;
+}
+void Deck::shuffle(){
+    
+}

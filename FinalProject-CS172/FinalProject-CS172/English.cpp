@@ -7,3 +7,7 @@
 //
 
 #include "English.hpp"
+
+void English::compare(string input){
+    
+}

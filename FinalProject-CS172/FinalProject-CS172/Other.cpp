@@ -7,3 +7,7 @@
 //
 
 #include "Other.hpp"
+
+void Other::flip(){
+    
+}

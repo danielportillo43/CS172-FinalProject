@@ -7,3 +7,10 @@
 //
 
 #include "Math.hpp"
+
+int Math::add(){
+    
+}
+int Math::subtract(){
+    
+}
