@@ -7,3 +7,19 @@
 //
 
 #include "Student.hpp"
+
+Student::Student(){
+    
+}
+Student::Student(string n){
+    name = n;
+}
+string Student::getName(){
+    return name;
+}
+void Student::setName(string n){
+    name = n;
+}
+void Student::createDeck(int choice){
+    
+}
