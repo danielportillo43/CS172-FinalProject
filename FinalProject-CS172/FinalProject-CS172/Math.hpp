@@ -10,8 +10,9 @@
 #define Math_hpp
 
 #include <stdio.h>
+#include "Card.hpp"
 
-class Math {
+class Math : public Card {
 public:
     //find a way to read in the face of the card and then do the appropriate calculations to auto create the answer (back) of the card
     int add();
