@@ -9,26 +9,33 @@
 #ifndef Deck_hpp
 #define Deck_hpp
 
+#include "Card.hpp"
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include <fstream>
 using namespace std;
 
 class Student;
 class Card;
+
 class Deck {
     //subject for the deck of cards
     string subject;
+    string deckFileName;
     //vector of cards for the deck
-    vector<Card>cards;
+    vector<Card*>cards;
     
 public:
-    //no arg constructor for the deck
-    Deck();
-    //constructor that passes in the subject name for the deck
-    Deck(string s);
+    //constructor for the deck that passes in a filename
+    Deck(string deck);
+    //copy constructor
+    ~Deck();
+    Deck(Deck* deck);
     // get the subject for the deck
     string getSubject();
+    string getDeckFileName();
+    int getNumberOfCards();
     //shuffle the order of the cards int the vector cards
     void shuffle();
 };

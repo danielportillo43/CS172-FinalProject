@@ -8,10 +8,13 @@
 
 #include "Card.hpp"
 
-Card::Card(){
-    
+Card::Card(string ID)
+{
+    cardID = ID;
 }
-Card::Card(T f, T b){
-    face = f;
-    back = b;
+
+
+string Card::getCardID()
+{
+    return cardID;
 }
