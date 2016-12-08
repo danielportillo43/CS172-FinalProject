@@ -30,19 +30,15 @@ public:
     Card(string f, string b);
     // copy constructor
     Card(Card* card);
-<<<<<<< HEAD
-    //constuctor passes in the face and the back of the card
-    Card(string f, string b);
     
     string getCardID();
-    
     virtual bool compare(string input);
-=======
+    
     //get functions
     int getCardID();
     string getFace();
     string getBack();  
->>>>>>> 62bd4711a0caa4ccd5c3e3d09cc6495c6237b75a
+
 };
 
 #endif /* Card_hpp */
