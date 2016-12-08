@@ -8,9 +8,13 @@
 
 #include "Card.hpp"
 
-Card::Card(string ID)
+int Card::nextCardID = 0;
+Card::Card(string f, string b)
 {
-    cardID = ID;
+    cardID = nextCardID;
+    nextCardID++;
+    face = f;
+    back = b;
 }
 
 Card::Card(string f, string b)
@@ -19,10 +23,11 @@ Card::Card(string f, string b)
     back = b;
 }
 
-string Card::getCardID()
+int Card::getCardID()
 {
     return cardID;
 }
+<<<<<<< HEAD
 
 bool Card::compare(string input)
 {
@@ -35,3 +40,18 @@ bool Card::compare(string input)
         return false;
     }
 }
+=======
+<<<<<<< HEAD
+
+string Card::getFace()
+{
+    return face;
+}
+
+string Card::getBack()
+{
+    return back;
+}
+=======
+>>>>>>> 134e5b3871e977253c975b33e93df89ae7bd292d
+>>>>>>> 62bd4711a0caa4ccd5c3e3d09cc6495c6237b75a
