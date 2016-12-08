@@ -22,6 +22,18 @@ int Card::getCardID()
     return cardID;
 }
 
+bool Card::compare(string input)
+{
+    if (input == face)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
 string Card::getFace()
 {
     return face;
