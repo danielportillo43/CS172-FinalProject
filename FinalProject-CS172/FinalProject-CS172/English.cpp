@@ -8,6 +8,7 @@
 
 #include "English.hpp"
 
+/*
 bool English::compare(string input){
     if (input == face){
         return true;
@@ -16,3 +17,4 @@ bool English::compare(string input){
         return false;
     }
 }
+*/

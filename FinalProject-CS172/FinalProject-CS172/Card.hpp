@@ -33,6 +33,8 @@ public:
     Card(string f, string b);
     
     string getCardID();
+    
+    virtual bool compare(string input);
 };
 
 #endif /* Card_hpp */
