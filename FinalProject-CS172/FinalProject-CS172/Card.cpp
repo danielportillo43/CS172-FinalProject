@@ -13,6 +13,11 @@ Card::Card(string ID)
     cardID = ID;
 }
 
+Card::Card(string f, string b)
+{
+    face = f;
+    back = b;
+}
 
 string Card::getCardID()
 {
