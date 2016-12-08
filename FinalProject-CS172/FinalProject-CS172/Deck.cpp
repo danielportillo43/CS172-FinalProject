@@ -90,3 +90,7 @@ Card* Deck::getCardWithId(int cardID)
     }
     return cards[0];
 }
+void Deck::addCard(Card *card)
+{
+    cards.push_back(card);
+}
