@@ -8,6 +8,11 @@
 
 #include "English.hpp"
 
-void English::compare(string input){
-    
+bool English::compare(string input){
+    if (input == face){
+        return true;
+    }
+    else{
+        return false;
+    }
 }

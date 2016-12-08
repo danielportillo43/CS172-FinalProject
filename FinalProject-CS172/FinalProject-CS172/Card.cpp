@@ -17,11 +17,17 @@ Card::Card(string f, string b)
     back = b;
 }
 
+Card::Card(string f, string b)
+{
+    face = f;
+    back = b;
+}
 
 int Card::getCardID()
 {
     return cardID;
 }
+<<<<<<< HEAD
 
 string Card::getFace()
 {
@@ -32,3 +38,5 @@ string Card::getBack()
 {
     return back;
 }
+=======
+>>>>>>> 134e5b3871e977253c975b33e93df89ae7bd292d
