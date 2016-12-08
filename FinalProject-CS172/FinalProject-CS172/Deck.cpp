@@ -22,15 +22,16 @@ Deck::Deck(string deck)
     }
     string fileName = deckFileName;
     fstream file(fileName,ios::in | ios::app);
-    string cardID;
+    string face;
+    string back;
     if (!file.fail())
     {
         while (!file.eof())
         {
-            if (file >> cardID)
+            if (file >> face >> back)
             {
                 Card* card = NULL;
-                card = new Card(cardID);
+                card = new Card(face, back);
                 cards.push_back(card);
             }
         }
@@ -45,7 +46,7 @@ Deck::~Deck()
     
     for (int i = 0; i < cards.size(); i++)
     {
-        out << cards[i]->getCardID();
+        out << cards[i]->getFace() << cards[i]->getBack();
     }
     out.close();
     
@@ -76,4 +77,16 @@ int Deck::getNumberOfCards(){
 void Deck::shuffle(){
     random_shuffle(cards.begin(), cards.end());
     
+}
+
+Card* Deck::getCardWithId(int cardID)
+{
+    for (int i = 0; i < cards.size(); i++)
+    {
+        if (cards[i]->getCardID() == cardID)
+        {
+            return cards[i];
+        }
+    }
+    return cards[0];
 }

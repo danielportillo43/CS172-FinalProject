@@ -8,13 +8,27 @@
 
 #include "Card.hpp"
 
-Card::Card(string ID)
+int Card::nextCardID = 0;
+Card::Card(string f, string b)
 {
-    cardID = ID;
+    cardID = nextCardID;
+    nextCardID++;
+    face = f;
+    back = b;
 }
 
 
-string Card::getCardID()
+int Card::getCardID()
 {
     return cardID;
+}
+
+string Card::getFace()
+{
+    return face;
+}
+
+string Card::getBack()
+{
+    return back;
 }
