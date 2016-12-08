@@ -5,7 +5,7 @@
 //  Created by Daniel Portillo on 11/17/16.
 //  Copyright © 2016 Daniel Portillo. All rights reserved.
 //
-
+/*
 #ifndef Math_hpp
 #define Math_hpp
 
@@ -20,4 +20,4 @@ public:
     virtual bool compare(string input);
 };
 
-#endif /* Math_hpp */
+#endif /* Math_hpp*/

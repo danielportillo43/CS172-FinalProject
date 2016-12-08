@@ -7,16 +7,14 @@
 //
 
 #include <iostream>
+#include <stdlib.h>
+
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    
-    std::cout << " help!!\n";
-    return 0;
-    //1
-
+    cout << "HELLO,\n" << "WELCOME TO DJ's BRAND NEW FLASHCARD GAME!\n\n" << "Press enter to continue...\n\n\n";
+    cin.ignore();
+    system("clear");
+    cout << "goodbye";
 }
-// hi

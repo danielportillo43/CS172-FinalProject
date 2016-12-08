@@ -31,7 +31,6 @@ public:
     // copy constructor
     Card(Card* card);
     
-    string getCardID();
     virtual bool compare(string input);
     
     //get functions

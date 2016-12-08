@@ -5,7 +5,7 @@
 //  Created by Daniel Portillo on 11/17/16.
 //  Copyright © 2016 Daniel Portillo. All rights reserved.
 //
-
+/*
 #include <iostream>
 #include <string>
 #include "Math.hpp"
@@ -30,3 +30,4 @@ bool Math::compare(string input)
 {
     if (input == )
 }
+*/
