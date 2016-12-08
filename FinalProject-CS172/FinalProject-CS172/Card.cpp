@@ -24,7 +24,7 @@ int Card::getCardID()
 
 bool Card::compare(string input)
 {
-    if (input == face)
+    if (input == back)
     {
         return true;
     }

@@ -23,10 +23,10 @@ class Deck {
     //subject for the deck of cards
     string subject;
     string deckFileName;
-    //vector of cards for the deck
-    vector<Card*>cards;
     
 public:
+    //vector of cards for the deck
+    vector<Card*>cards;
     //constructor for the deck that passes in a filename
     Deck(string deck);
     //copy constructor
@@ -40,6 +40,7 @@ public:
     void shuffle();
     //function that can find any card in the deck by its cardID
     Card* getCardWithId(int cardID);
+    void addCard(Card* card);
 };
 
 #endif /* Deck_hpp */
