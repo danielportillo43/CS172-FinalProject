@@ -41,3 +41,16 @@ void Math::subtract(){
     Card* c1 = new Card(f, b);
     mathCards.addCard(c1);
 }
+/*
+bool Math::compare(string input)
+{
+    if (input == getBack())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+*/
