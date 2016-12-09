@@ -21,8 +21,8 @@ void Math::add(){
     cin >> m;
     cout << endl;
     
-    std::string f = std::to_string(n) + "+" + std::to_string(m);
-    std::string b = std::to_string(n+m);
+    string f = to_string(n) + "+" + to_string(m);
+    string b = to_string(n+m);
     Card* c1 = new Card(f, b);
     mathCards.addCard(c1);
 }
@@ -36,20 +36,8 @@ void Math::subtract(){
     cin >> m;
     cout << endl;
     
-    std::string f = std::to_string(n) + "-" + std::to_string(m);
-    std::string b = std::to_string(n-m);
+    string f = to_string(n) + "-" + to_string(m);
+    string b = to_string(n-m);
     Card* c1 = new Card(f, b);
     mathCards.addCard(c1);
-}
-
-bool Math::compare(string input)
-{
-    if (input == getBack())
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
 }

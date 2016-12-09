@@ -11,10 +11,14 @@
 
 #include <stdio.h>
 
-#include "Card.HPP"
+#include "Card.hpp"
+#include "Student.hpp"
 
 class MathCard : public Card
 {
+    
+public:
+    virtual bool compare(string input);
     
 };
 

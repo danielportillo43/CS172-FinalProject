@@ -94,3 +94,9 @@ void Deck::addCard(Card *card)
 {
     cards.push_back(card);
 }
+
+
+
+
+
+

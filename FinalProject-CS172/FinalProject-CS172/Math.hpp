@@ -21,7 +21,6 @@ public:
     //find a way to read in the face of the card and then do the appropriate calculations to auto create the answer (back) of the card
     void add();
     void subtract();
-    virtual bool compare(string input);
 };
 
 #endif /* Math_hpp*/

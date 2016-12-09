@@ -22,7 +22,7 @@ class Student {
     //the users name
     string name;
     //a grade based on the total answers right / total answers
-    int reportCard;
+    static int reportCard;
     // vector that holds the users various decks
     vector<Deck*>decks;
 public:
@@ -38,6 +38,8 @@ public:
     int numberOfDecks();
     // create a new deck for the user. this should add the deck to the students decks vector
     void createDeck(Deck* deck);
+    
+    Deck* getDeck(string name);
 };
 
 #endif /* Student_hpp */

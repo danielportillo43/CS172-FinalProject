@@ -8,13 +8,13 @@
 
 #include "English.hpp"
 
-/*
+
 bool English::compare(string input){
-    if (input == face){
+    if (input == getBack()){
         return true;
     }
     else{
         return false;
     }
 }
-*/
+

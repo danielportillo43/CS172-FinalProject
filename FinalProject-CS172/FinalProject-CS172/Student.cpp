@@ -76,6 +76,19 @@ void Student::createDeck(Deck* deck)
     decks.push_back(copy);
 }
 
+Deck* Student::getDeck(string name)
+{
+    string fileName = name + ".txt";
+    for (int i = 0; i < decks.size(); i++)
+    {
+        if (decks[i]->getDeckFileName() == fileName)
+        {
+            return decks[i];
+        }
+    }
+    return decks[0];
+}
+
 
 
 

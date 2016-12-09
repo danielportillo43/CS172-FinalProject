@@ -34,13 +34,17 @@ public:
     Deck(Deck* deck);
     // get the subject for the deck
     string getSubject();
+    
     string getDeckFileName();
+    
     int getNumberOfCards();
     //shuffle the order of the cards int the vector cards
     void shuffle();
     //function that can find any card in the deck by its cardID
     Card* getCardWithId(int cardID);
+    
     void addCard(Card* card);
+    
 };
 
 #endif /* Deck_hpp */
