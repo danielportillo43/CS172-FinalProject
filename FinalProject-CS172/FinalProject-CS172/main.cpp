@@ -30,6 +30,7 @@ void exit();
 
 int main()
 {
+    
     int choice;
     cout << "HELLO,\n" << "WELCOME TO DJ's BRAND NEW FLASHCARD GAME!\n\n" << "Press enter to continue...\n\n\n\n\n\n\n";
     
@@ -60,6 +61,15 @@ int main()
     return 0;
 }
 
+void newUser()
+{
+    string username;
+    cout << "Enter a username: ";
+    cin >> username;
+    cout << endl;
+    Student* user = new Student(username);
+}
+
 void returningUser()
 {
     int choice;
@@ -88,5 +98,10 @@ void chooseDeck()
     string deckName;
     cout << "\n\n\n\n\n\n\nPlease enter the name of the deck you would like to study: ";
     cin >> deckName;
+    
 }
 
+void newDeck()
+{
+    //create deck through the user.
+}
