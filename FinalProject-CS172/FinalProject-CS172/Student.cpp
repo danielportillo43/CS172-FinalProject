@@ -126,7 +126,7 @@ void Student::chooseDeck()
     chosenDeck = getDeck(deckName);
     score = chosenDeck->study();
     delete chosenDeck;
-    cout << score;
+    reportCard = score;
     
 }
 

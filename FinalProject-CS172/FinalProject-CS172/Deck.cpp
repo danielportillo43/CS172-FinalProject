@@ -97,7 +97,7 @@ double Deck::study()
     int correct = 0;
     for (int i = 0; i<cards.size(); i++)
     {
-        cout << "What is " << cards[i]->getBack() << ": ";
+        cout << "What is " << cards[i]->getBack() << " ";
         cin >> answer;
         if (answer == cards[i]->getFace())
         {
@@ -112,6 +112,61 @@ double Deck::study()
     cout << "For your " << getSubject()<< " deck, you got " << correct << " out of " << cards.size() << " cards correct" << endl;
     return correct/cards.size();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

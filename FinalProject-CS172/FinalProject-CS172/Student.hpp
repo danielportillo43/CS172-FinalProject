@@ -21,6 +21,8 @@ class Deck;
 class Student {
     // vector that holds the users various decks
     vector<Deck*>decks;
+    
+    double reportCard;
 public:
     //constructor that passes in the name of the user
     Student();
@@ -35,9 +37,8 @@ public:
     int numberOfDecks();
     // create a new deck for the user. this should add the deck to the students decks vector
     void createDeck(string deck);
-    //get and set for reportCard
+    //get for reportCard
     int getReportCard();
-    void setReportCard(int score);
     
     Deck* getDeck(string name);
     

@@ -30,7 +30,75 @@ int main()
     cout << "HELLO,\n" << "WELCOME TO DJ's BRAND NEW FLASHCARD TOOL!\n\n" << "Press enter to continue...\n\n\n\n\n\n\n";
     
     cin.ignore();
+    user->newDeck();
     
+        return 0;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    /*
     cout << "Please select an option from the menu below:\n\n" << "a. Choose an existing deck to study\n" << "b. Create a new deck\n" << "enter Q to quit\n\n";
     
     cin >> choice;
@@ -50,9 +118,8 @@ int main()
             break;
 
     } while (choice != 'q' && choice != 'Q');
+*/
 
-    return 0;
-}
 
 
 
