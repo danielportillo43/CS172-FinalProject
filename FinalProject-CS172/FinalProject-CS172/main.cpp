@@ -17,16 +17,13 @@
 #include "Math.hpp"
 #include "MathCard.hpp"
 #include "English.hpp"
-#include "Names.hpp"
 
 using namespace std;
 
-void returningUser();
 void chooseDeck();
-void newDeck();
-void newUser();
+int newDeck();
 
-Student* user = new Student("User");
+Student* user = new Student();
 
 int main()
 {
@@ -36,17 +33,17 @@ int main()
     
     cin.ignore();
     
-    cout << "Please select an option from the menu below:\n\n" << "a. returning user\n" << "b. new user\n" << "enter Q to quit\n\n\n\n\n\n\n";
+    cout << "Please select an option from the menu below:\n\n" << "a. Choose an existing deck to study\n" << "b. Create a new deck\n" << "enter Q to quit";
     
     cin >> choice;
     cin.ignore();
     switch (choice)
     {
         case 'a':
-            returningUser();
+            chooseDeck();
             break;
         case 'b':
-            newUser();
+            newDeck();
             break;
            
         case 'Q':
@@ -56,65 +53,7 @@ int main()
 
     } while (choice != 'q' && choice != 'Q');
 
-    cout << "Please select an option from the menu below:\n\n" << "a. create a new deck\n" << "b. work from existing deck";
-
     return 0;
-}
-
-void newUser()
-{
-    int check = 0;
-    string username;
-    do {
-        cout << "Enter a username: ";
-        cin >> username;
-    //check if username is availible
-        for (int i = 0; i < names.size(); i++)
-        {
-            if (username == names[i])
-            {
-                check = 1;
-            }
-        }
-        if (check == 1)
-        {
-            cout << "username not availible please try another";
-        }
-    } while (check == 1);
-    //Student* user = new Student(username);
-    names.push_back(user->getStudentName());
-    
-    newDeck();
-    
-    //delete user;
-    
-    
-}
-
-void returningUser()
-{
-    int choice;
-    string username;
-    cout << "Enter your username: ";
-    cin >> username;
-    
-    cout << "\n\n\n\n\n\n\nPlease select an option from the menu below:\n\n" << "1. choose from existing decks\n" << "2. create new deck\n" << "enter Q to quit\n\n\n\n\n\n\n";
-    cin >> choice;
-    cin.ignore();
-    switch (choice)
-    {
-        case '1':
-            chooseDeck();
-            break;
-        case '2':
-            newDeck();
-            break;
-            
-        case 'Q':
-        case 'q':
-            break;
-            
-    } while (choice != 'q' && choice != 'Q');
 }
 
 void chooseDeck()
@@ -122,11 +61,11 @@ void chooseDeck()
     string deckName;
     cout << "\n\n\n\n\n\n\nPlease enter the name of the deck you would like to study: ";
     cin >> deckName;
-    user->getDeck(deckName);
-
+    Deck* deck = user->getDeck(deckName);
+    deck->study();
 }
 
-void newDeck()
+int newDeck()
 {
     char kill;
     do {
@@ -151,4 +90,20 @@ void newDeck()
         kill = NULL;
         cin >> kill;
     } while (kill != 'Q' && kill != 'q');
+    
+    char choice = NULL;
+    cout << "\n\n\n\n\n\n\nTo study one of your new decks enter 'S'\n";
+    cout << "Or enter any other key to quit: ";
+    cin >> choice;
+    if (choice == 'S' && choice == 's')
+    {
+        chooseDeck();
+    }
+    else return 0;
 }
+
+
+
+
+
+
