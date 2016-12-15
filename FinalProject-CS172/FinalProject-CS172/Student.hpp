@@ -10,7 +10,6 @@
 #define Student_hpp
 
 #include "Deck.hpp"
-#include "Names.hpp"
 #include <stdio.h>
 #include <string>
 #include <vector>
@@ -20,13 +19,11 @@ using namespace std;
 class Deck;
 
 class Student {
-    //the users name
-    string name;
     // vector that holds the users various decks
     vector<Deck*>decks;
 public:
     //constructor that passes in the name of the user
-    Student(string n);
+    Student();
     //deconstructor
     ~Student();
     

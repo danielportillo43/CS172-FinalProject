@@ -9,11 +9,9 @@
 #include "Student.hpp"
 
 //Creates a new Student with the given name
-Student::Student(string n)
+Student::Student()
 {
-    name = n;
-    names.push_back(name);
-    string fileName = name + ".txt";
+    string fileName = "student.txt";
     fstream file(fileName, ios::in | ios::app);//open or create the student file
     //placeholders for use in deckFileName transfer from .txt file to the deckFileName vector for the Student object and the students report card
     string deckFileName;
@@ -38,7 +36,7 @@ Student::Student(string n)
 //a city with this name is created.
 Student::~Student()
 {
-    string fileName = name + ".txt";
+    string fileName = "student.txt";
     ofstream out(fileName);
     
     for (int i = 0; i < decks.size(); i++)
@@ -50,17 +48,6 @@ Student::~Student()
     for (int i = 0; i < decks.size(); i++) {
         delete decks[i];
     }
-}
-
-//Returns the city name
-string Student::getStudentName()
-{
-    return name;
-}
-
-void Student::setName(string n)
-{
-    name = n;
 }
 
 int Student::numberOfDecks()
