@@ -12,14 +12,13 @@
 Student::Student(string n)
 {
     name = n;
+    names.push_back(name);
     string fileName = name + ".txt";
     fstream file(fileName, ios::in | ios::app);//open or create the student file
     //placeholders for use in deckFileName transfer from .txt file to the deckFileName vector for the Student object and the students report card
-    int reportCard;
     string deckFileName;
     if (!file.fail())
     {
-        file >> reportCard;
         while (!file.eof()) {
             if(file >> deckFileName)
             {
@@ -42,10 +41,9 @@ Student::~Student()
     string fileName = name + ".txt";
     ofstream out(fileName);
     
-    out << reportCard;
     for (int i = 0; i < decks.size(); i++)
     {
-        out << decks[i]->getDeckFileName();
+        out << decks[i]->getDeckFileName() << " ";
     }
     out.close();
     
@@ -70,7 +68,7 @@ int Student::numberOfDecks()
     return decks.size();
 }
 
-void Student::createDeck(Deck* deck)
+void Student::createDeck(string deck)
 {
     Deck* copy = new Deck(deck);
     decks.push_back(copy);
@@ -88,6 +86,8 @@ Deck* Student::getDeck(string name)
     }
     return decks[0];
 }
+
+
 
 
 

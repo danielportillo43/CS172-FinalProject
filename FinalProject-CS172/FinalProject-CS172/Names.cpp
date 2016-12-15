@@ -6,8 +6,6 @@
 //  Copyright © 2016 Daniel Portillo. All rights reserved.
 //
 
-#include "Other.hpp"
+#include "Names.hpp"
 
-void Other::flip(){
-    
-}
+vector<string>names;

@@ -10,16 +10,8 @@
 
 Deck::Deck(string deck)
 {
-    if ((deck.erase(deck.length() - 4)) == ".txt")
-    {
-        deckFileName = deck;
-        subject = deck.erase(deck.length() - 4);
-    }
-    else
-    {
-        subject = deck;
-        deckFileName = subject + ".txt";
-    }
+    subject = deck;
+    deckFileName = subject + ".txt";
     string fileName = deckFileName;
     fstream file(fileName,ios::in | ios::app);
     string face;
@@ -46,7 +38,7 @@ Deck::~Deck()
     
     for (int i = 0; i < cards.size(); i++)
     {
-        out << cards[i]->getFace() << cards[i]->getBack();
+        out << cards[i]->getFace() << " " << cards[i]->getBack() << " ";
     }
     out.close();
     
@@ -90,8 +82,9 @@ Card* Deck::getCardWithId(int cardID)
     }
     return cards[0];
 }
-void Deck::addCard(Card *card)
+void Deck::addCard(string f, string b)
 {
+    Card* card = new Card(f,b);
     cards.push_back(card);
 }
 

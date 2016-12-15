@@ -10,6 +10,7 @@
 #define Student_hpp
 
 #include "Deck.hpp"
+#include "Names.hpp"
 #include <stdio.h>
 #include <string>
 #include <vector>
@@ -21,8 +22,6 @@ class Deck;
 class Student {
     //the users name
     string name;
-    //a grade based on the total answers right / total answers
-    static int reportCard;
     // vector that holds the users various decks
     vector<Deck*>decks;
 public:
@@ -30,6 +29,7 @@ public:
     Student(string n);
     //deconstructor
     ~Student();
+    
     //get function for the users name
     string getStudentName();
     //set the users name
@@ -37,7 +37,10 @@ public:
     //return number of decks Student has
     int numberOfDecks();
     // create a new deck for the user. this should add the deck to the students decks vector
-    void createDeck(Deck* deck);
+    void createDeck(string deck);
+    //get and set for reportCard
+    int getReportCard();
+    void setReportCard(int score);
     
     Deck* getDeck(string name);
 };

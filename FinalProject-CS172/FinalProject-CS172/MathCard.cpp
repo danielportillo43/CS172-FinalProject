@@ -9,11 +9,11 @@
 #include "MathCard.hpp"
 
 
+
 bool MathCard::compare(string input)
 {
     if (input == getBack())
     {
-        reportCard++;
         return true;
     }
     else

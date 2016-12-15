@@ -43,7 +43,7 @@ public:
     //function that can find any card in the deck by its cardID
     Card* getCardWithId(int cardID);
     
-    void addCard(Card* card);
+    void addCard(string f, string b);
     
 };
 

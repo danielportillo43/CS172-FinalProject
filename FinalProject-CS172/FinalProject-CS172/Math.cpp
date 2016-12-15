@@ -23,8 +23,7 @@ void Math::add(){
     
     string f = to_string(n) + "+" + to_string(m);
     string b = to_string(n+m);
-    Card* c1 = new Card(f, b);
-    mathCards.addCard(c1);
+    mathCards.addCard(f,b);
 }
 void Math::subtract(){
     double n;
@@ -38,8 +37,7 @@ void Math::subtract(){
     
     string f = to_string(n) + "-" + to_string(m);
     string b = to_string(n-m);
-    Card* c1 = new Card(f, b);
-    mathCards.addCard(c1);
+    mathCards.addCard(f,b);
 }
 /*
 bool Math::compare(string input)

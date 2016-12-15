@@ -12,7 +12,7 @@
 		14A97D5B1DDECC35001E3E02 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D591DDECC35001E3E02 /* Card.cpp */; };
 		14A97D5E1DDECC57001E3E02 /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D5C1DDECC57001E3E02 /* Math.cpp */; };
 		14A97D611DDECC6A001E3E02 /* English.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D5F1DDECC6A001E3E02 /* English.cpp */; };
-		14A97D641DDECD08001E3E02 /* Other.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D621DDECD08001E3E02 /* Other.cpp */; };
+		14A97D641DDECD08001E3E02 /* Names.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D621DDECD08001E3E02 /* Names.cpp */; };
 		14E98B991DDBC8F200E07634 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E98B981DDBC8F200E07634 /* main.cpp */; };
 		14EF49661DFA285600BFA790 /* MathCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EF49641DFA285600BFA790 /* MathCard.cpp */; };
 /* End PBXBuildFile section */
@@ -40,8 +40,8 @@
 		14A97D5D1DDECC57001E3E02 /* Math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Math.hpp; sourceTree = "<group>"; };
 		14A97D5F1DDECC6A001E3E02 /* English.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = English.cpp; sourceTree = "<group>"; };
 		14A97D601DDECC6A001E3E02 /* English.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = English.hpp; sourceTree = "<group>"; };
-		14A97D621DDECD08001E3E02 /* Other.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Other.cpp; sourceTree = "<group>"; };
-		14A97D631DDECD08001E3E02 /* Other.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Other.hpp; sourceTree = "<group>"; };
+		14A97D621DDECD08001E3E02 /* Names.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Names.cpp; sourceTree = "<group>"; };
+		14A97D631DDECD08001E3E02 /* Names.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Names.hpp; sourceTree = "<group>"; };
 		14E98B951DDBC8F100E07634 /* FinalProject-CS172 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "FinalProject-CS172"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E98B981DDBC8F200E07634 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		14EF49641DFA285600BFA790 /* MathCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathCard.cpp; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 				14EF49651DFA285600BFA790 /* MathCard.hpp */,
 				14A97D5F1DDECC6A001E3E02 /* English.cpp */,
 				14A97D601DDECC6A001E3E02 /* English.hpp */,
-				14A97D621DDECD08001E3E02 /* Other.cpp */,
-				14A97D631DDECD08001E3E02 /* Other.hpp */,
+				14A97D621DDECD08001E3E02 /* Names.cpp */,
+				14A97D631DDECD08001E3E02 /* Names.hpp */,
 			);
 			path = "FinalProject-CS172";
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				14A97D551DDECC1A001E3E02 /* Student.cpp in Sources */,
 				14A97D5B1DDECC35001E3E02 /* Card.cpp in Sources */,
 				14A97D5E1DDECC57001E3E02 /* Math.cpp in Sources */,
-				14A97D641DDECD08001E3E02 /* Other.cpp in Sources */,
+				14A97D641DDECD08001E3E02 /* Names.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
