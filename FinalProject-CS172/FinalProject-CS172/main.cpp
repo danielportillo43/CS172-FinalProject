@@ -22,7 +22,7 @@
 using namespace std;
 
 void returningUser();
-void chooseDeck();
+Deck* chooseDeck();
 void newDeck();
 void newUser();
 
@@ -86,7 +86,7 @@ void newUser()
     
     newDeck();
     
-    //delete user;
+    delete user;
     
     
 }
@@ -117,12 +117,14 @@ void returningUser()
     } while (choice != 'q' && choice != 'Q');
 }
 
-void chooseDeck()
+Deck* chooseDeck()
 {
+    Deck* chosenDeck;
     string deckName;
     cout << "\n\n\n\n\n\n\nPlease enter the name of the deck you would like to study: ";
     cin >> deckName;
-    user->getDeck(deckName);
+    chosenDeck = user->getDeck(deckName);
+    return chosenDeck;
 
 }
 
@@ -151,4 +153,27 @@ void newDeck()
         kill = NULL;
         cin >> kill;
     } while (kill != 'Q' && kill != 'q');
+}
+
+void study()
+{
+    Deck* deck = chooseDeck();
+    cout << "Let's begin studying!" << endl;
+    string answer;
+    int correct = 0;
+    for (int i = 0; i<deck->cards.size(); i++)
+    {
+        cout << "What is " << deck->cards[i]->getBack() << ": ";
+        cin >> answer;
+        if (answer == deck->cards[i]->getFace())
+        {
+            cout << "That's correct! The answer was " << deck->cards[i]->getFace() << endl;
+            correct++;
+        }
+        else
+        {
+            cout << "Incorrect. The correct answer was " << deck->cards[i]->getFace() << endl;
+        }
+    }
+    cout << "For your " << deck->getSubject()<< " deck, you got " << correct << " out of " << deck->cards.size() << " cards correct" << endl;
 }

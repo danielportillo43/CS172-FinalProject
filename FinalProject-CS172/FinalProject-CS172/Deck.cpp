@@ -82,12 +82,12 @@ Card* Deck::getCardWithId(int cardID)
     }
     return cards[0];
 }
+
 void Deck::addCard(string f, string b)
 {
     Card* card = new Card(f,b);
     cards.push_back(card);
 }
-
 
 
 
