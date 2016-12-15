@@ -26,10 +26,11 @@ void chooseDeck();
 void newDeck();
 void newUser();
 
+Student* user = new Student("User");
 
 int main()
 {
-    
+   
     char choice;
     cout << "HELLO,\n" << "WELCOME TO DJ's BRAND NEW FLASHCARD GAME!\n\n" << "Press enter to continue...\n\n\n\n\n\n\n";
     
@@ -80,34 +81,12 @@ void newUser()
             cout << "username not availible please try another";
         }
     } while (check == 1);
-    Student* user = new Student(username);
+    //Student* user = new Student(username);
     names.push_back(user->getStudentName());
     
-    char kill;
-    do {
-        string deckName;
-        cout << "please enter a name for your deck: ";
-        cin >> deckName;
-        user->createDeck(deckName);
-        Deck* deck = user->getDeck(deckName);
-        do {
-            string face;
-            string back;
-            cout << "what do you want the front of your flashcard to say: ";
-            cin >> face;
-            cout << "\n\n\n\n\n\n\nwhat do you want the back of your flashcard to say: ";
-            cin >> back;
-            deck->addCard(face, back);
-            cout << "\n\n\n\n\n\n\nto stop entry press Q. Or any other key to enter another card: ";
-            kill = NULL;
-            cin >> kill;
-        } while (kill != 'Q' && kill != 'q');
-        cout << "\n\n\n\n\n\n\nto stop entry press Q. Or any other key to enter another deck: ";
-        kill = NULL;
-        cin >> kill;
-    } while (kill != 'Q' && kill != 'q');
+    newDeck();
     
-    delete user;
+    //delete user;
     
     
 }
@@ -116,7 +95,7 @@ void returningUser()
 {
     int choice;
     string username;
-    cout << "enter your username: ";
+    cout << "Enter your username: ";
     cin >> username;
     
     cout << "\n\n\n\n\n\n\nPlease select an option from the menu below:\n\n" << "1. choose from existing decks\n" << "2. create new deck\n" << "enter Q to quit\n\n\n\n\n\n\n";
@@ -143,10 +122,33 @@ void chooseDeck()
     string deckName;
     cout << "\n\n\n\n\n\n\nPlease enter the name of the deck you would like to study: ";
     cin >> deckName;
+    user->getDeck(deckName);
 
 }
 
 void newDeck()
 {
-    //create deck through the user.
+    char kill;
+    do {
+        string deckName;
+        cout << "please enter a name for your deck: ";
+        cin >> deckName;
+        user->createDeck(deckName);
+        Deck* deck = user->getDeck(deckName);
+        do {
+            string face;
+            string back;
+            cout << "what do you want the front of your flashcard to say: ";
+            cin >> face;
+            cout << "\n\n\n\n\n\n\nwhat do you want the back of your flashcard to say: ";
+            cin >> back;
+            deck->addCard(face, back);
+            cout << "\n\n\n\n\n\n\nto stop entry press Q. Or any other key to enter another card: ";
+            kill = NULL;
+            cin >> kill;
+        } while (kill != 'Q' && kill != 'q');
+        cout << "\n\n\n\n\n\n\nto stop entry press Q. Or any other key to enter another deck: ";
+        kill = NULL;
+        cin >> kill;
+    } while (kill != 'Q' && kill != 'q');
 }
