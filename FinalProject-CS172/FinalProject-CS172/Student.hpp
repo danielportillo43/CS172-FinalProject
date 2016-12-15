@@ -40,6 +40,12 @@ public:
     void setReportCard(int score);
     
     Deck* getDeck(string name);
+    
+    void newDeck();
+    
+    void chooseDeck();
+    
+    void addDeck(Deck* deck);
 };
 
 #endif /* Student_hpp */

@@ -11,6 +11,7 @@
 
 #include "Card.hpp"
 #include <stdio.h>
+#include "iostream"
 #include <string>
 #include <vector>
 #include <fstream>
@@ -44,6 +45,8 @@ public:
     Card* getCardWithId(int cardID);
     
     void addCard(string f, string b);
+    
+    double study();
     
     
 };

@@ -90,6 +90,28 @@ void Deck::addCard(string f, string b)
 }
 
 
+double Deck::study()
+{
+    cout << "Let's begin studying!" << endl;
+    string answer;
+    int correct = 0;
+    for (int i = 0; i<cards.size(); i++)
+    {
+        cout << "What is " << cards[i]->getBack() << ": ";
+        cin >> answer;
+        if (answer == cards[i]->getFace())
+        {
+            cout << "That's correct! The answer was " << cards[i]->getFace() << endl;
+            correct++;
+        }
+        else
+        {
+            cout << "Incorrect. The correct answer was " << cards[i]->getFace() << endl;
+        }
+    }
+    cout << "For your " << getSubject()<< " deck, you got " << correct << " out of " << cards.size() << " cards correct" << endl;
+    return correct/cards.size();
+}
 
 
 
